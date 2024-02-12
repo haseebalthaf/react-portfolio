@@ -1,0 +1,50 @@
+/* Navigation bar */
+/* Aligning and decorating navigation bar and navigation items */
+.navBar {
+    font-family: "Poppins";
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    background-image: linear-gradient(
+      to right top,
+      #030711,
+      #080e1d,
+      #0a1429,
+      #0a1835,
+      #0c1b41
+    );
+  }
+  
+  /* Placement of page logo */
+  .logoContainer {
+    display: flex;
+    margin-left: 200px;
+    padding: 10px;
+  }
+  
+  /* Navigation container, holding the navigation items */
+  .navContainer {
+    margin-right: 200px;
+  }
+  
+  /* Items of navigation container */
+  .navItem {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.3s;
+  }
+  
+  /* Animations on hover for items */
+  .navItem:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  /* Active selector functionality */
+  .navItem.active {
+    border: 1px solid white;
+  }

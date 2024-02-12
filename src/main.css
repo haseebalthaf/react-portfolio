@@ -1,0 +1,10 @@
+/* Font for Website */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Background image for the website body */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
