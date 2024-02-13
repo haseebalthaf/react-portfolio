@@ -1,10 +1,162 @@
 /* Font for Website */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
+/* Fade in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Universal style for horizontal rule */
+hr {
+  border: 0;
+  height: 1px;
+  width: 80%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  animation: fadeIn 2s;
+}
+
 /* Background image for the website body */
 html, body {
   margin: 0;
   padding: 0;
   background-color: white;
   font-family: "Poppins", sans-serif;
+}
+
+/* Home Page Styles */
+/* Container for the home page title and the image */
+.homeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn 2s;
+}
+
+/* Adjusting the home page title placement in a flexbox */
+.homeTitle {
+  font-size: 96px;
+  margin-top: 250px;
+  margin-left: 100px;
+  line-height: 100px;
+}
+
+/* Adjusting the home page image placement in a flexbox */
+.homeImg {
+  margin: 70px;
+}
+
+/* About Page Styles */
+/* Styling the avatar image and the placement */
+.avatarContainer {
+  margin-top: 40px;
+  margin-left: 100px;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: fadeIn 2s;
+}
+
+/* Placement for the content */
+.aboutContent {
+  margin-left: 100px;
+  margin-right: 100px;
+  animation: fadeIn 2s;
+}
+
+/* Socials link bar container placement */
+.socialContainer {
+  margin-left: 100px;
+  animation: fadeIn 2s;
+}
+
+/* To remove the line */
+a {
+  text-decoration: none;
+}
+
+/* Styling and placement of social icons */
+.socialIcon {
+  margin-right: 15px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Animations on hover for social icons */
+.socialIcon:hover {
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Project Page Styles */
+/* Adjusting the placement of the blog container. */
+.projectContainer {
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+  animation: fadeIn 2s;
+}
+
+/* Adding exceptional styles to the time element */
+.projectContainer time {
+  font-weight: normal;
+  color: gray;
+}
+
+/* Styling the forms */
+.formContainer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s;
+}
+
+/* Styling paragraph element in the forms */
+.formContent p {
+  font-size: 16px;
+  margin: 4px;
+  padding: 4px;
+}
+
+/* Styling the input box in the forms */
+input {
+  padding: 14px 16px;
+  border-radius: 80px;
+  border: 1.5px solid #d1d1d1;
+  font-size: 12px;
+}
+
+/* Styling the subscribe button in the forms */
+.subscribeBtn {
+  padding: 14px 16px;
+  border-radius: 80px;
+  background: linear-gradient(
+    to right top,
+    #030711,
+    #080e1d,
+    #0a1429,
+    #0a1835,
+    #0c1b41
+  );
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styling the placeholder in the input box */
+::placeholder {
+  color: #d1d1d1;
 }

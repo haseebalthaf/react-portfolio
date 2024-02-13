@@ -1,14 +1,21 @@
+import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
+    const location = useLocation();
+
+    const isActive = (pathname) => {
+        return location.pathname === pathname ? 'active' : '';
+    };
+
     return(
         <>
         <div className="navBar">
-            <img src="./images/logo.png" alt="website-logo" className="logoContainer" height="45" />
+            <img src="./images/logo.png" alt="website-logo" className="logoContainer" />
             <nav className="navContainer">
-                <a className="navItem active" href="/">Home</a>
-                <a className="navItem" href="about">About</a>
-                <a className="navItem" href="projects">Projects</a>
+            <Link to="/" className={`navItem ${isActive('/')}`}>Home</Link>
+        <Link to="/about" className={`navItem ${isActive('/about')}`}>About</Link>
+        <Link to="/projects" className={`navItem ${isActive('/projects')}`}>Projects</Link>
             </nav>
         </div>
         </>
