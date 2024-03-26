@@ -14,31 +14,27 @@ function Projects() {
       <Footer />
       <div className="projectContainer">
         <ul>
-          <li key="groupProject">
+          <li>
             ALiyah e-Learning Platform
             <p>Assisted in creating an e-Learning Platform using MERN stack for Software Development Group Project module.</p>
           </li>
-          <li key="individualProject">
+          <li>
             Real Estate Website
             <p>Created a website for real estate displaying properties using ReactJS, CSS and Bootstrap for Advanced Client Side module.</p>
           </li>
-          <li key="individualProject">
+          <li>
             Westminster Shopping Manager
             <p>Created a command line based shopping manager using Java for Object Oriented Programming module.</p>
           </li>
-          <li key="individualProject">
+          <li>
             Restaurant Billing System
             <p>Created a command line based billing system for a restaurant using Java for Software Development 2 module.</p>
           </li>
-          <li key="individualProject">
+          <li>
             University Grading System
             <p>Created a command line based grading system for university using Python for Software Development 1 module.</p>
           </li>
-          <li key="individualProject">
-            University Grading System
-            <p>Created a command line based grading system for university using Python for Software Development 1 module.</p>
-          </li>
-          <li key="individualProject">
+          <li>
             Sports Club Website
             <p>Assisted in creating a Sports based information/shopping website using HTML, CSS and JavaScript.</p>
           </li>
