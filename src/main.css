@@ -107,10 +107,12 @@ a {
   animation: fadeIn 2s;
 }
 
-/* Adding exceptional styles to the time element */
-.projectContainer time {
+.projectContainer p {
+  margin: 0;
+  font-size: 14px;
   font-weight: normal;
   color: gray;
+  padding: 4px;
 }
 
 /* Styling the forms */
@@ -154,6 +156,7 @@ input {
   border: none;
   outline: none;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Styling the placeholder in the input box */
